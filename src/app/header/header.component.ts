@@ -4,7 +4,8 @@ import { Subscribe } from '../Services/Subscribe.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  providers:[Subscribe],
 })
 export class HeaderComponent {
   selectedTab:string='home';

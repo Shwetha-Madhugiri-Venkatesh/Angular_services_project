@@ -32,7 +32,7 @@ export const user_ = new InjectionToken<Users>('User_token');
     FormsModule
   ],
   // providers: [Subscribe,{provide:Users, useClass:Users},Logger],
-  providers: [Subscribe,{provide:user_, useClass:Users}],
+  providers: [{provide:user_, useClass:Users}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
